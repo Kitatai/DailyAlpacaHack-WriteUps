@@ -2,7 +2,7 @@
 
 ## 背景
 
-[Gloinks](https://alpacahack.com/daily-bside/challenges/gloinks) は AlpacaHack Daily B-side の問題です。
+[Gloinks](https://alpacahack.com/daily-bside/challenges/gloinks) は Alpaca B-side の問題です。
 
 この問題は解答期間中には解き切れず、正答者の writeup を待っていました。
 その後、[garume さん](https://alpacahack.com/users/garume) の
