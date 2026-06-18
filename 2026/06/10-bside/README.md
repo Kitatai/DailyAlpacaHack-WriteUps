@@ -11,7 +11,7 @@ libmagic を使った解法に感心していました。
 
 しかし、作問者である [ptr-yudai さん](https://alpacahack.com/users/ptr-yudai) の
 [投稿](https://x.com/ptrYudai/status/2066787255038189669) で、
-多くの solve は libmagic を使った非想定解であり、想定解は Python の memory corruption bug を使うものだったと知りました。
+多くの solve は libmagic を使った非想定解であり、想定解は Python の memory corruption bug を使うものであったと知りました。
 そこで、想定解の方針で解き直した内容をまとめます。
 
 ## 方針
@@ -138,7 +138,6 @@ i = data.index(b"PK\x01\x02")
 data[i + 24 : i + 28] = INT_MAX.to_bytes(4, "little")
 ```
 
-`PK\x01\x02` は ZIP central directory file header の signature です。
 この header では offset `24..28` が uncompressed size なので、ここを `INT_MAX` にします。
 solver が `manifest.xml` を最初に `writestr()` しているため、最初の central directory entry が
 `manifest.xml` になります。
