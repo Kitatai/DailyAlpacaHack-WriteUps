@@ -303,12 +303,3 @@ if __name__ == "__main__":
 ```bash
 python3 solve.py http://<host>:<port>
 ```
-
-<details>
-<summary>flag</summary>
-
-```text
-Alpaca{m3M0ry_s4f3TY_1s_a_Li3}
-```
-
-</details>
